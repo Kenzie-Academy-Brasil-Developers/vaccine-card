@@ -3,7 +3,6 @@ from flask import jsonify, request
 import datetime 
 from sqlalchemy.orm.session import Session
 from sqlalchemy.exc import IntegrityError
-from psycopg2.errors import CheckViolation, UniqueViolation
 
 from app.models.vaccine_card_model import VaccineCard
 from app.configs.database import db
